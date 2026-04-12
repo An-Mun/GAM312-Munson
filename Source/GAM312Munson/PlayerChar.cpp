@@ -129,7 +129,7 @@ void APlayerChar::FindObject()
 
                         matsCollected = matsCollected + resourceValue;
 
-                        objWidget->UpdatematOBJ(resourceValue);
+                        objWidget->UpdatematOBJ(matsCollected);
 
                         check(GEngine != nullptr);
                         GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Resource Collected"));
